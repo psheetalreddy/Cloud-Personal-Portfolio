@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italiana&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         .heading {
@@ -11,8 +14,7 @@
             justify-content: center;
             align-items: center;
             padding-top: 1%;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-style: italic;
+            font-family:"EB Garamond";
         }
         .section {
             margin-top: 0;
@@ -24,23 +26,42 @@
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
+
+        .excContainer {
+          display:flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding-left: 15%;
+        }
+
+        .exc {
+          gap:5%;
+          padding-top:3%;
+        }
+
+        .title {
+          font-family: "EB Garamond";
+        }
+
     </style>
 </head>
 <body>
     <div class="heading">
-        <h1 class="pb-2 fw-bold">Personal Portfolio</h1>
+        <h1 class="pb-2 fw-bold" style = "font-size: 100px;">Personal Portfolio</h1>
     </div>
-    <div class="container col-xxl-8 px-4 py-3 section profile-section">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="../personalPortfolio/images/myProfile.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi! I'm P Sheetal Reddy</h1>
-            <p class="lead">I am a dedicated and enthusiastic Computer Science and Engineering undergraduate student at VIT Vellore, driven by a passion for technology and innovation. With a solid foundation in computer science principles and hands-on experience in various programming languages and tools, I am eager to apply my knowledge to real-world challenges and contribute to impactful projects.</p>
-          </div>
+    <div class="container px-5 py-5 section profile-section">
+      <div class="row align-items-center justify-content-between g-5">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi! I'm P Sheetal Reddy</h1>
+          <p class="lead">I am a dedicated and enthusiastic Computer Science and Engineering undergraduate student at VIT Vellore, driven by a passion for technology and innovation. I am eager to apply my knowledge to real-world challenges and contribute to impactful projects.</p>
         </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images/myProfile.jpg" class="d-block mx-auto img-fluid" alt="Profile Picture" width="700" height="500" loading="lazy">
+        </div>
+      </div>
     </div>
+    
 
     <div class="container px-4 py-3 section">
         <div class="d-flex flex-column g-4">
@@ -66,5 +87,54 @@
           </div>
         </div>
     </div>
+
+    <br>
+    <br>
+
+    <div class = "excContainer">
+      <div>
+        <span class="title display-5 fw-bold text-body-emphasis lh-1 mb-3">My Extracurriculars</span>
+      </div>
+      <div class = "exc d-flex">
+        <div class="card" style="width: 18rem;">
+          <img src="images/bharathnatiyam.png" class="card-img-top" alt="bharathnatiyam">
+          <div class="card-body">
+            <p class="card-text"><b><em>Bharathnatiyam</em></b><br>I began my Bharathnatyam journey at the age of 6 and continued until I was 13. This experience has greatly enriched my appreciation for classical dance and cultural heritage.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/ncc.png" class="card-img-top" alt="ncc">
+          <div class="card-body">
+            <p class="card-text"><b><em>National Cadet Corps</em></b><br>I actively participated in the National Cadet Corps (NCC) for 2 years, which instilled in me discipline and leadership skills. During this period, I had the opportunity to attend a 10-day camp, where I engaged in various physical and team-building activities.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="images/nss.jpg" class="card-img-top" alt="nss">
+          <div class="card-body">
+            <p class="card-text"><b><em>National Service Scheme</em></b><br>I was an active participant in the National Service Scheme (NSS), where I contributed to various social service initiatives. I took part in blood donation camps and additionally also participated in a service camp, where our team engaged in cleaning efforts, teaching, spreading awareness and setting up health booths. This experience was profoundly fulfilling and enhanced my sense of social responsibility and community service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    </div>
+    <footer class="px-5 py-3 rounded-3 d-flex flex-wrap justify-content-between align-items-center border-top">
+      <div class="col-md-7 align-items-center">
+        <h1 class = "contactMe">Contact me!</h1>
+        <div>
+          <span><b>Mail Id: </b>psheetalreddy.12@gmail.com</span><br>
+          <span><b>Phone No. </b>9790791568</span>
+        </div>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3 social"><a class="text-body-secondary" target = "_blank" href="https://github.com/dashboard"><img src = "images/github.svg"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" target = "_blank" href="https://www.linkedin.com/in/p-sheetal-reddy-746545274?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSFm3WAjeRmCMYFURj45T4A%3D%3D"><img src = "images/linkedin.svg"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src = "images/instagram.svg"></a></li>
+      </ul>
+    </footer>
 </body>
 </html>
